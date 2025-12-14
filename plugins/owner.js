@@ -2,27 +2,27 @@ const { cmd } = require('../command');
 const config = require('../config');
 
 cmd({
-    pattern: "owner",
+    pattern: "Ricky-musky",
     react: "✅", 
-    desc: "Get owner number",
+    desc: "234704 717 5216",
     category: "main",
     filename: __filename
 }, 
 async (conn, mek, m, { from }) => {
     try {
-        const ownerNumber = config.OWNER_NUMBER; // Fetch owner number from config
-        const ownerName = config.OWNER_NAME;     // Fetch owner name from config
+        const ownerNumber = config.234704 717 5216; // Fetch owner number from config
+        const ownerName = config.Ricky-musky;     // Fetch owner name from config
 
         const vcard = 'BEGIN:VCARD\n' +
                       'VERSION:3.0\n' +
-                      `FN:${ownerName}\n` +  
-                      `TEL;type=CELL;type=VOICE;waid=${ownerNumber.replace('+', '')}:${ownerNumber}\n` + 
+                      `FN:${Ricky-musky}\n` +  
+                      `TEL;type=CELL;type=VOICE;waid=${234704 717 5216.replace('+', '')}:${ownerNumber}\n` + 
                       'END:VCARD';
 
         // Send the vCard
         const sentVCard = await conn.sendMessage(from, {
             contacts: {
-                displayName: ownerName,
+                displayName: Ricky-musky,
                 contacts: [{ vcard }]
             }
         });
@@ -33,14 +33,14 @@ async (conn, mek, m, { from }) => {
             caption: `╭━━〔 *𝐀𝐫𝐬𝐥𝐚𝐧_𝐌𝐃* 〕━━┈⊷
 ┃◈╭─────────────·๏
 ┃◈┃• *Here is the owner details*
-┃◈┃• *Name* - ${ownerName}
-┃◈┃• *Number* ${ownerNumber}
+┃◈┃• *Name* - ${Ricky-musky}
+┃◈┃• *Number* ${234704 717 5216}
 ┃◈┃• *Version*: 2.0.0 Beta
 ┃◈└───────────┈⊷
 ╰──────────────┈⊷
 > *© ᴘᴏᴡᴇʀᴇᴅ ʙʏ 𝐀𝐫𝐬𝐥𝐚𝐧_𝐌𝐃 ❣️*`, // Display the owner's details
             contextInfo: {
-                mentionedJid: [`${ownerNumber.replace('+', '')}@s.whatsapp.net`], 
+                mentionedJid: [`${234704 717 5216.replace('+', '')}@s.whatsapp.net`], 
                 forwardingScore: 999,
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
